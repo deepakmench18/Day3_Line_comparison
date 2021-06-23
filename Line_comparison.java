@@ -26,6 +26,17 @@ public class Line_Comparison {
 	   int d = (q2-q1)*(q2-q1);
        double length_line1 = Math.sqrt(a + b);
        double length_line2 = Math.sqrt(c + d);
+       String x =Double.toString(length_line1);
+       String y =Double. toString(length_line2);
+       boolean result = x.equals(y);
+       if (result == true)
+       {
+    	   System.out.println("Both LENGTH OF LINE IS EQUAL");
+       }
+       else
+       {
+    	   System.out.println("Both length of line is not equal");
+       }
 	}
 
 }

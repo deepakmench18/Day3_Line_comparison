@@ -1,4 +1,3 @@
-
 import java.util.*;
 public class Line_Comparison {
 
@@ -29,14 +28,20 @@ public class Line_Comparison {
        String x =Double.toString(length_line1);
        String y =Double. toString(length_line2);
        boolean result = x.equals(y);
-       if (result == true)
+       int i = x.compareTo(y);
+       if (i > 0)
        {
-    	   System.out.println("Both LENGTH OF LINE IS EQUAL");
+    	   System.out.println("Length line 1 is greater");
+       }
+       else if (i < 0)
+       {
+    	   System.out.println("Length line 2 is greater");
        }
        else
        {
-    	   System.out.println("Both length of line is not equal");
+    	   System.out.println("Both are equal");
        }
 	}
 
 }
+
